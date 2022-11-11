@@ -1,0 +1,88 @@
+{
+  /* 开启保存时自动格式化 */
+  "editor.formatOnSave": true,
+  /* eslint的配置 */
+  // "eslint.enable": true,
+  "eslint.run": "onSave",
+  "eslint.options": {
+    "extensions": [
+      ".js",
+      ".vue"
+    ]
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true // 保存时自动修复
+  },
+  // 关闭 vscode 默认的检查工具
+  "html.validate.scripts": false,
+  "javascript.validate.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "scss.lint.duplicateProperties": "error",
+  "css.lint.duplicateProperties": "error",
+  "less.lint.zeroUnits": "error",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue-html",
+    "vue",
+    "html"
+  ],
+
+  /* 每种语言默认的格式化规则 */
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    // .vue文件使用vetur作为格式化工具
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "vetur.format.defaultFormatter.html": "none", // 不使用vetur格式化.vue里的html代码
+  "vetur.format.defaultFormatter.js": "none",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false, //为true时tabSize配置不生效
+  "editor.insertSpaces": true,
+  "search.followSymlinks": false,
+  "git.confirmSync": false,
+  "editor.rulers": [],
+  /* koroFileHeader插件 头部注释 快捷键：window：ctrl+alt+i , mac：ctrl+cmd+i , linux: ctrl+meta+i  */
+  "fileheader.customMade": {
+  
+    "Author": "sunyu", // 创建者
+    "Date": "Do not edit", // 文件创建时间(不变)
+    "LastEditors": "sunyu", // 文件最后编辑者
+    "LastEditTime": "", // 文件最后编辑时间
+    "Description": "", // 描述
+    "FilePath": "" // 路径
+  },
+  /* koroFileHeader插件 函数注释 快捷键：window：ctrl+alt+t , mac：ctrl+cmd+t , linux: ctrl+meta+t */
+  "fileheader.cursorMode": {
+    "autoAdd": true,
+    "description": "",
+    "param": "",
+    "return": ""
+  },
+  "px-to-rem.number-of-decimals-digits": 16,
+  "px-to-rem.px-per-rem": 0,
+  "window.zoomLevel": 0,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.maxComputationTime": 0,
+  "workbench.iconTheme": "vscode-icons",
+  "vetur.ignoreProjectWarning": true
+}
+  
